@@ -1,0 +1,4 @@
+outs:
+- md5: f9e8631fd19baf49732177e35900c544
+  size: 512
+  path: reg_model08242021-2016.pkl
