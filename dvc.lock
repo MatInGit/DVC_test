@@ -1,0 +1,19 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python src/train.py
+    deps:
+    - path: data/IRIS.csv
+      md5: 9f44d5c52de2354fb45e9dcfc0e90b16
+      size: 4617
+    - path: src/train.py
+      md5: 40aa2158fd62892fa66854cecc41e984
+      size: 998
+    params:
+      params.yaml:
+        train.seed: 42
+        train.split: 0.5
+    outs:
+    - path: models/reg_model.pkl
+      md5: f9e8631fd19baf49732177e35900c544
+      size: 512
